@@ -1,0 +1,2 @@
+1. Open terminal in backend, run "node index.js"
+2. Open terminal in frontend, run "npm start"
