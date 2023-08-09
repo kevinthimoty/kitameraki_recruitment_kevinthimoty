@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import TaskItem from './TaskItem';
 import '../App.css';
 import { DefaultButton, TextField } from '@fluentui/react';
 
@@ -7,9 +6,6 @@ const TaskList = () => {
   const [tasks, setTasks] = useState([]);
   const url = "http://localhost:5000/tasks";
   const [data, setData] = useState([]);
-
-  const [updateStatus, setUpdateStatus] = useState(false);
-
 
   const fetchInfo = () => {
     return fetch(url)
@@ -26,23 +22,11 @@ const TaskList = () => {
     window.location.reload();
   };
 
-  const handleUpdate = (taskId, updatedTask) => {
-    // Handle task update, e.g., make a PUT request to the backend
-    // Remember to implement the API for updating a task on the backend
-    // After successful update, update the tasks state with the updated task data
-
-    setUpdateStatus(!updateStatus);
-  };
+  // const handleUpdate = () => {
+  // };
 
   return (
     <div className="task-list">
-      {tasks.map((task) => (
-        <TaskItem
-          key={task.id}
-          task={task}
-        />
-      ))}
-
         <div>
               {data.map((dataObj, index) => {
               return (
