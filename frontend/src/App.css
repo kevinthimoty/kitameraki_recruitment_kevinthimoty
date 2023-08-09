@@ -1,0 +1,36 @@
+body{
+  background-color: paleturquoise;
+  font-family: monospace;
+}
+
+.header{
+  text-align: center;
+  color: rgb(50, 49, 48);
+}
+
+.task-form {
+  position: absolute;
+  width: 269px;
+  height: 200px;
+  left: 50%;
+  margin-left: -125px;
+}
+
+.task-list {
+  text-align: center;
+  position: absolute;
+  width: 269px;
+  height: 200px;
+  top: 35%;
+  left: 50%;
+  margin-left: -125px;
+  margin-top: -50px;
+  color: rgb(50, 49, 48);
+}
+
+.task-list-item{
+  text-align: left;
+}
+
+.task-list-button{
+}
